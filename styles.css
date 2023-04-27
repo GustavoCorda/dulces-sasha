@@ -1,0 +1,358 @@
+*body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    text-align: center;
+
+    
+}
+
+body{
+  background: url(./images/textura\ 1.webp);
+}
+
+
+/* ########## HEADER ########## */
+
+.div-encabezado{
+    width: 95vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+    
+     }
+
+.media-screen{
+  padding: 0px 40px;
+  width: 95vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+}
+   
+   .logo{
+     align-self: flex-end;
+     /* border: solid 1px red; */
+     width: 25vw;
+     height: 180px;
+   }
+   
+   .imagen-logo {
+    
+     width:200px;
+     height: 180px;
+     padding: 0;
+   }
+
+   .logo-grande {
+
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    
+  
+  }
+  
+  .logo-grande:target {
+    position: fixed;
+    visibility: visible;
+    opacity:  1;
+  }
+  
+  .foto-logo {
+  
+    position: relative;
+    text-align: center;
+  
+  }
+  
+  .foto-del-logo{
+    position: absolute;
+    left: 33%;
+    height: 640px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background: url(./images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  }
+  
+  #cerrar-logo {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+  
+    transition: all 200ms;
+  }
+  
+  /* ---- TITULO ----  */
+h1{
+    font-family: inspiration;
+    font-size: 70px;
+}
+
+  /* ---- LINEA DIVISORIA ---- */
+  .linea-hr{
+    border: solid 1px black;
+    width: 100%;
+  }
+
+  h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+  }
+
+  .fotos-con-links{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .fotos-con-links img{
+   
+    width: 300px;
+    height: 400px;
+  }
+
+  /* ##################### */
+  /* ##pagina de postres## */
+
+  /* .second-title {
+
+    color: black;
+  
+    font-size: 30px;
+  
+    font-weight: normal;
+  
+    text-align: center;
+  
+    font-family: 'Inspiration'
+  
+  
+  } */
+
+  .galeria-postres img {
+
+    width: 300px;
+    height: 400px;
+    padding: 0px;
+  
+  }
+  .galeria-tortas img {
+    width: 300px;
+    height: 400px;
+    padding: 0px;
+  
+  }
+
+  /*###################################### */
+  /* #####  pop up postres y tortas  ##### */
+
+  *{
+    text-align: center;
+  }
+  .overlay {
+  
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .overlay:target {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #popupBody {
+  
+    width: 46%;
+    padding: 2%;
+    border: solid 2px black;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(128, 128, 128);
+    background: url(../images/textura\ 1.webp);
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+  
+  
+  }
+  
+  .popupContent{
+  
+    color: black;
+  }
+  
+  
+  
+  #cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+  
+    transition: all 200ms;
+  }
+  
+
+  
+  footer{
+    background-color: black;
+    text-align: left;
+    font-size: small;
+    font-family: sans-serif;
+    color: white;
+    font-size: 10px;
+    width: 100%;
+  
+  }
+  /* ############################### */
+  /*#### pagina de contactanos ####*/
+  .contenedor-contactanos{
+    background-color: whitesmoke;
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    border: solid rgb(0, 0, 0) 1px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 75%;
+  }
+
+  .contenedor-contactanos input{
+    text-align: left;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1.5 rgba(0, 0, 0, 0.3);
+  }
+  
+  #doble{
+    height: 15%;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  #doble div{
+    border-radius: 2px;
+    margin: 3px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  #texto{
+    height: 18% ;
+    width: 85%;
+    text-align: left;
+    max-width: 90%;
+    resize: none;
+  }
+  
+  #texto-label{
+    display: block;
+  }
+  
+  /* .texto{
+    border-radius: 4px;
+    text-align: left;
+    vertical-align: top;
+    max-width: 100%;
+  } */
+  .contenedor-boton-enviar{
+    text-align: left;
+    padding-left: 8%;
+  }
+
+  .enviar{
+    border: solid 1px;
+    border-radius: 2px;
+  }
+  
+  .h3{
+    text-align: left;
+  }
+  
+  .datos-correctos{
+    text-align: left;
+  }
+  
+  .cuenta{
+  
+    padding: 3px;
+    width: 200px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+ 
+  
+  .button{
+    margin-top: 10px;
+    align-self: center;
+  
+  }
+  
+  
+  /* input[type="text"],
+  input[type="email"],
+  textarea{
+    text-align: left;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1.5 rgba(0, 0, 0, 0.3);
+  } */
+  
+  .cuenta *input{
+    padding: 2px;
+    width: 98%;
+    
+    border-radius: 3px;
+    border: solid 1px black;
+  
+  }
+
+
+  footer p{
+    text-align: left;
+  }
+  
+  footer a{
+    color: white;
+  }
+  

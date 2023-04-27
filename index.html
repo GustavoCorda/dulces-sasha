@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulces Sasha</title>
+    <link rel="shortcut icon" href="./images/icono.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <!--imagen logo-->
+      <div class="div-encabezado">
+        <div class="logo">
+          <a class="link-logo" href="#logo-grande-id"
+            ><img class="imagen-logo" src="./images/logo.jpg" alt=""
+          /></a>
+        </div>
+        <div class="media-screen">
+          <!-- titulo-->
+         
+          <div class="divh1">
+            <h1 class="titulo">Dulces Sasha</h1>
+          </div>
+          <div class="links-nav">
+        
+            <button>
+              <a href="https://www.instagram.com/dulces_ss03/" target="_blank"
+                >Instagram</a
+              >
+            </button>
+
+            <button>
+              <a href="">Sobre mi</a>
+            </button>
+
+            <button>
+              <a href="./contactanos/index.html">Contáctanos</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr class="linea-hr" />
+
+    <h2>Postres, Tortas, Mesas Dulces, y mucho mas!</h2>
+    <!-- descripcion-->
+
+    <div class="fotos-con-links">
+      <!--abrir vinculo-------------- imagen--------------------cierre de vinculo -->
+
+      <a href="./postres/index.html" target="_blank"
+        ><img src="./images/foto 10.jpg" alt=""
+      /></a>
+
+      <a href="./tortas/index.html"
+        ><img src="./images/foto 11.jpg" alt=""
+      /></a>
+    </div>
+
+    <footer>
+      <p>Dulces Sasha</p>
+      <p>Copyright © 2022 Dulces Sasha All rights reserved.</p>
+      <a href="./contactanos/index.html">Contáctanos</a>
+    </footer>
+
+    <div id="logo-grande-id" class="logo-grande">
+      <div class="foto-logo">
+        <a id="cerrar-logo" href="#">&times;</a>
+        <div class="foto-del-logo"></div>
+      </div>
+    </div>
+
+    <style>
+      @media screen And (max-width: 820px) {
+        .titulo {
+          font-size: 55px;
+        }
+      }
+      @media screen And (max-width: 750px) {
+        .div-encabezado {
+          padding: 10px 0px 0px;
+          height: 90px;
+        }
+
+        .titulo {
+          padding: 0px;
+          font-size: 50px;
+          margin: 0px;
+        }
+
+        .links-nav {
+          height: 30px;
+        }
+
+        .link-logo {
+          pointer-events: none;
+        }
+
+        .logo {
+          width: 50px;
+          height: 80px;
+        }
+
+        .imagen-logo {
+          visibility: visible;
+          width: 80px;
+          height: 80px;
+        }
+
+        .fotos-con-links{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+        }
+       
+      }
+
+      @media screen And (max-width: 620px) {
+        .fotos-con-links img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      @media screen And (max-width: 588px) {
+        .media-screen {
+          width: 80%;
+        }
+
+      }
+      @media screen And (max-width: 390px) {
+
+        .fotos-con-links img{
+          width: 240px;
+          height: 300px;
+        }
+        
+      }
+
+      @media screen And (max-width: 350px) {
+        .links-nav {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          width: 50%;
+        }
+      }
+
+      @media screen And (max-width: 322px) {
+        .links-nav {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          width: 50%;
+        }
+
+        /* .media-screen{
+          width: max-content;
+        }
+
+        .titulo{
+          width: 20%;
+        }
+
+        .imagen-logo{
+          width: 18%;
+        } */
+      }
+    </style>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

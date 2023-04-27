@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulces Sasha</title>
+    <link rel="shortcut icon" href="./icono.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+     
+        <div class="div-encabezado">
+          <div class="logo">
+            <img class="imagen-logo" src="../images/logo.jpg" alt="" />
+          </div>
+          <div class="media-screen">
+            <!-- titulo-->
+            <!-- <div class="vacio"></div> -->
+            <div class="divh1">
+              <h1 class="titulo">Dulces Sasha</h1>
+            </div>
+            <div class="links-nav">
+              <button>
+                <a class="boton-inicio" href="../index.html">Inicio</a>
+              </button>
+              <button>
+                <a href="https://www.instagram.com/dulces_ss03/" target="_blank"
+                  >Instagram</a
+                >
+              </button>
+  
+              <button>
+                <a href="">Sobre mi</a>
+              </button>
+  
+              <button>
+                <a href="../contactanos/index.html">Contáctanos</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <hr />
+
+    <div class="contenedor-contactanos">
+      <div class="" id="doble">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" />
+        </div>
+        <div>
+          <label for="email">e-mail</label>
+          <input type="email" name="" id="email" />
+        </div>
+      </div>
+      <div class="texto">
+        <label id="texto-label" for="texto">Texto</label>
+        <textarea name="" id="texto" cols="85%" rows="85%" maxlength ="200"
+        placeholder="maximo 200 caracteres"></textarea>
+     <div class="contenedor-boton-enviar">
+        <button onclick="enviarJs()" class="enviar">Enviar</button>
+      </div>    
+      </div>
+
+     
+    </div>
+
+    <br />
+    <br />
+
+    <hr />
+    <br />
+
+    <!-- para el ingreso simulado usaresta lista -->
+    <h3 class="h3">Simular una validacion de logueo</h3>
+    <p class="datos-correctos">
+      <u>Datos Correctos:</u><br />
+      <br />
+      mail: matias@mail.com <br />
+
+      pass: profematias <br /><br />
+
+      mail: nico@gmail.com <br />
+
+      pass: nicolas123 <br /><br />
+
+      mail: sasha@hotmail.com <br />
+
+      pass: sashamail
+    </p>
+
+    <div class="cuenta" id="loguearse">
+      <div>
+        <label for="mailLogin"> cuenta </label>
+      </div>
+      <div><input type="email" id="mailLogin" placeholder="email" /></div>
+      <div>
+        <label for="pass">contraseña</label>
+      </div>
+      <div>
+        <input type="password" id="pass" placeholder="contraseña" />
+      </div>
+      <div class="button">
+        <button onclick="autenticacion()">acceso</button>
+      </div>
+    </div>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
